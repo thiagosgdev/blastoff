@@ -9,69 +9,69 @@ não consegui chegar a uma conclusão ainda, mas pretendo olhar com mais calma q
 
 Fiz todos os testes pelo Console do Chrome, apenas abri o arquivo HTML e depois o Console e inseri o comando e inputs. Segue abaixo os exemplos pra cada exercicio.
 
-Exercicio 01:
-averageAge(1, 2, 3, 4, 5)
-Retorno: 3
+Exercicio 01:<br/>
+averageAge(1, 2, 3, 4, 5)<br/>
+Retorno: 3<br/><br/>
 
-Exercicio 02:
-averageKmPerLiter(20, 4)
-Retorno: 5km/l
+Exercicio 02:<br/>
+averageKmPerLiter(20, 4)<br/>
+Retorno: 5km/l<br/><br/>
 
-Exercicio 03: 
-lowestNumber(7,3,12)
-Retorno: 3
+Exercicio 03: <br/>
+lowestNumber(7,3,12)<br/>
+Retorno: 3<br/><br/>
 
-Exericio 04:
-convertCelsiusToFahrenheit(40)
-Retorno: 104
+Exericio 04:<br/>
+convertCelsiusToFahrenheit(40)<br/>
+Retorno: 104<br/><br/>
 
-Exercicio 05
-multipleNumber(81, 3)
-Retorno: 81 é multiplo de 3
+Exercicio 05<br/>
+multipleNumber(81, 3)<br/>
+Retorno: 81 é multiplo de 3<br/>
 
-Exercicio 06
-footballMatch("14:08","15:01")
-Retorno: A partida durou: 0 horas e 53 minutos
+Exercicio 06<br/>
+footballMatch("14:08","15:01")<br/>
+Retorno: A partida durou: 0 horas e 53 minutos<br/><br/>
 
-Exercicio 07
-evenNumbers([2,3,4,5,8,11,24,25,32])
-Resultado: 'Numeros pares: 2,4,8,24,32'
+Exercicio 07<br/>
+evenNumbers([2,3,4,5,8,11,24,25,32])<br/>
+Resultado: 'Numeros pares: 2,4,8,24,32'<br/><br/>
 
-Exercicio 08
-cousinNumber(9)
-Resultado Nao
-cousinNumber(125)
-Resultado Nao
-cousinNumber(9)
-Resultado Nao
-cousinNumber(727)
-Resultado: 'O numero 727 é primo'
+Exercicio 08<br/>
+cousinNumber(9)<br/>
+Resultado Nao<br/>
+cousinNumber(125)<br/>
+Resultado Nao<br/>
+cousinNumber(9)<br/>
+Resultado Nao<br/>
+cousinNumber(727)<br/>
+Resultado: 'O numero 727 é primo'<br/><br/>
 
-Exercicio 09 - Poderia ter colocado para imprimir no console.log com cada multiplicacao, mas achei que assim ficaria mais "ok".
-numberTable(4, 10)
-Resultado: [0, 4, 8, 12, 16, 20, 24, 28, 32, 36, 40]
+Exercicio 09 - Poderia ter colocado para imprimir no console.log com cada multiplicacao, mas achei que assim ficaria mais "ok".<br/>
+numberTable(4, 10)<br/>
+Resultado: [0, 4, 8, 12, 16, 20, 24, 28, 32, 36, 40]<br/><br/>
 
-Exercicio 10
-factorial(6)
-Resultado: 720
+Exercicio 10<br/>
+factorial(6)<br/>
+Resultado: 720<br/><br/>
 
-Exercicio 11
-intersection([1,2,3,4],[1,2,5,8])
-Resultado: '1,2'
+Exercicio 11<br/>
+intersection([1,2,3,4],[1,2,5,8])<br/>
+Resultado: '1,2'<br/><br/>
 
-Exercicio 12
-concat([1,2,3,4],[1,2,5,8])
-Resultado: '1,1,2,2,3,5,4,8'
+Exercicio 12<br/>
+concat([1,2,3,4],[1,2,5,8])<br/>
+Resultado: '1,1,2,2,3,5,4,8'<br/><br/>
 
-Exercicio 13 - O primeiro valor é a quantidade de colunas que deseja, segundo a quantidade de linhas e por ultimo o array com os dados.
-matrices(2,3,[1,2,5,8,2,6])
-Resultado: 0: (3) [1, 2, 5]
-           1: (3) [8, 2, 6]
+Exercicio 13 - O primeiro valor é a quantidade de colunas que deseja, segundo a quantidade de linhas e por ultimo o array com os dados.<br/>
+matrices(2,3,[1,2,5,8,2,6])<br/>
+Resultado: 0: (3) [1, 2, 5]<br/>
+           1: (3) [8, 2, 6]<br/><br/>
 
-Exercicio 14 
-palindrome("a grama é amarga")
-Resultado: É um palindromo
-palindrome("osso")
-Resultado: É um palindromo
-palindrome("abacu")
-Resultado: Não é um palindromo
+Exercicio 14 <br/>
+palindrome("a grama é amarga")<br/>
+Resultado: É um palindromo<br/>
+palindrome("osso")<br/>
+Resultado: É um palindromo<br/>
+palindrome("abacu")<br/>
+Resultado: Não é um palindromo<br/><br/>
