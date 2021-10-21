@@ -3,9 +3,9 @@ function averageAge(I, J, K, X, Y){ //OK
     return Math.floor((I + J + K + X + Y)/5);
 }
 
-function averageGasByKm(distance, gasSpent) { //OK
-    const gasPerKm = distance / gasSpent;
-    return `Foi gasto ${gasPerKm} litros por KM percorrido.`;
+function averageKmPerLiter(distance, gasSpent) { //OK
+    const kmPerLiter = distance / gasSpent ;
+    return `Foi percorrido ${kmPerLiter}km/l`;
 }
 
 function lowestNumber(numberA, numberB, numberC){//OK
@@ -23,7 +23,7 @@ function lowestNumber(numberA, numberB, numberC){//OK
     }
 
     //Poderia ser feito também usando a função nativa do Javascript
-    //Math.min(numberA, numberB, numberC);
+    // return Math.min(numberA, numberB, numberC);
 }
 
 function convertCelsiusToFahrenheit(temp){//OK
@@ -40,11 +40,39 @@ function multipleNumber(numberA, numberB){ //OK
     }
 }
 
-function footballMatch(starTime, endTime){
-    const diffMillis = (starTime - endTime);
-    const diffHours = Math.floor((diffMillis % 86400000) % 360000);
-    const diffMin = Math.round(((diffMillis % 86400000) % 360000) / 60000);
-    return `A partida durou: ${diffHours} horas e ${diffMin} minutos`;
+function footballMatch(startTime, endTime){
+    let dateStart = new Date("2021-10-21 "+ startTime);
+    let dateEnd = new Date("2021-10-21 "+ endTime);
+    const diff = Math.abs(dateStart.getTime() - dateEnd.getTime());
+    let diffHours = Math.floor(diff / (1000* 60 * 60));
+    letDiffHoursInMinutes = diffHours * 60;
+    let diffMinutes = Math.floor(diff / (1000 * 60)) - letDiffHoursInMinutes;
+    return `A partida durou: ${diffHours} horas e ${diffMinutes} minutos`;
+
+
+
+    // const startHour = startTime.substr(0,2);
+    // const startMinutes = startTime.substr(3,2);
+    // const endHour = endTime.substr(0,2);
+    // const endMinutes = endTime.substr(3,2);    
+    // let diffHours = 0;
+    // let diffMinutes = 0;
+    // if((startHour >= 0 && startHour < 24) && (endHour > 0 && endHour < 24)){        
+    //     if((startMinutes >= 0 && startMinutes < 60) && (endMinutes >= 0 && endMinutes < 60)){
+    //         diffMinutes = endMinutes - startMinutes;
+    //         if(diffMinutes < 0){
+    //             diffMinutes += 60;
+    //         }
+    //         diffHours = endHour - startHour;
+    //         if(diffHours < 0){
+    //             diffHours += 24;
+    //         }
+    //         // if(((diffMinutes + endMinutes) === 60) && ((startHour + 1) === endHour)){
+
+    //         // }
+    //     }
+    // }
+    return `A partida durou: ${diffHours} horas e ${diffMinutes} minutos`;
 }
 
 function evenNumbers(numbers){//OK
@@ -104,7 +132,7 @@ function intersection(listA, listB){//OK
     return `${result}`;
 }
 
-function concat(listA, listB){//OK VERIFICAR ORDEM CRESCENTE
+function concat(listA, listB){//OK
     let result = [];
     const listSize = listA.length >= listB.length ? listA.length : listB.length;
     for(let i = 0; i < listSize; i++){
