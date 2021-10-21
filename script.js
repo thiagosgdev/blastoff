@@ -137,9 +137,10 @@ function matrices(axisX, axisY, values){
 }
 
 function palindrome (word){
-    let wordSplit = word.toLowerCase().split("");
+    let wordSplit = word.replace(/\s/g, '').toLowerCase().split("");
     let wordLength = Math.floor(wordSplit.length / 2);
     let backwards = wordSplit.length-1;
+    console.log(wordSplit);
     for(i = 0; i < wordLength; i++){
         if(wordSplit[i] !== wordSplit[backwards]){
             return "Não é um palindromo";    
