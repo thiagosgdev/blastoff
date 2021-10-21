@@ -67,7 +67,7 @@ function cousinNumber(num){
             cousinCount--;
         }
         if((~~(num / i) < i) && (cousinCount > 0) && (i === num)){
-            return `O numero ${num} é primo CONT ${cousinCount} i${i}`;
+            return `O numero ${num} é primo`;
         }
         if(cousinCount === 0){
             return `O numero ${num} NAO é primo`;
