@@ -1,14 +1,14 @@
 
-function averageAge(I, J, K, X, Y){ //OK
+function averageAge(I, J, K, X, Y){
     return Math.floor((I + J + K + X + Y)/5);
 }
 
-function averageKmPerLiter(distance, gasSpent) { //OK
+function averageKmPerLiter(distance, gasSpent) {
     const kmPerLiter = distance / gasSpent ;
     return `Foi percorrido ${kmPerLiter}km/l`;
 }
 
-function lowestNumber(numberA, numberB, numberC){//OK
+function lowestNumber(numberA, numberB, numberC){
     if(numberA < numberB){
         if(numberA < numberC){
             return numberA;
@@ -26,12 +26,12 @@ function lowestNumber(numberA, numberB, numberC){//OK
     // return Math.min(numberA, numberB, numberC);
 }
 
-function convertCelsiusToFahrenheit(temp){//OK
+function convertCelsiusToFahrenheit(temp){
     const fahre = ((temp * 9) / 5) + 32;
     return `Temp convertida: Fahrenheit: ${fahre}`
 }
 
-function multipleNumber(numberA, numberB){ //OK
+function multipleNumber(numberA, numberB){
     const rest = numberA % numberB;
     if(rest === 0){
         return `Numero: ${numberA} é multiplo de ${numberB}`;
@@ -45,37 +45,12 @@ function footballMatch(startTime, endTime){
     let dateEnd = new Date("2021-10-21 "+ endTime);
     const diff = Math.abs(dateStart.getTime() - dateEnd.getTime());
     let diffHours = Math.floor(diff / (1000* 60 * 60));
-    letDiffHoursInMinutes = diffHours * 60;
-    let diffMinutes = Math.floor(diff / (1000 * 60)) - letDiffHoursInMinutes;
-    return `A partida durou: ${diffHours} horas e ${diffMinutes} minutos`;
-
-
-
-    // const startHour = startTime.substr(0,2);
-    // const startMinutes = startTime.substr(3,2);
-    // const endHour = endTime.substr(0,2);
-    // const endMinutes = endTime.substr(3,2);    
-    // let diffHours = 0;
-    // let diffMinutes = 0;
-    // if((startHour >= 0 && startHour < 24) && (endHour > 0 && endHour < 24)){        
-    //     if((startMinutes >= 0 && startMinutes < 60) && (endMinutes >= 0 && endMinutes < 60)){
-    //         diffMinutes = endMinutes - startMinutes;
-    //         if(diffMinutes < 0){
-    //             diffMinutes += 60;
-    //         }
-    //         diffHours = endHour - startHour;
-    //         if(diffHours < 0){
-    //             diffHours += 24;
-    //         }
-    //         // if(((diffMinutes + endMinutes) === 60) && ((startHour + 1) === endHour)){
-
-    //         // }
-    //     }
-    // }
+    let DiffHoursInMinutes = diffHours * 60;
+    let diffMinutes = Math.floor(diff / (1000 * 60)) - DiffHoursInMinutes;
     return `A partida durou: ${diffHours} horas e ${diffMinutes} minutos`;
 }
 
-function evenNumbers(numbers){//OK
+function evenNumbers(numbers){
     let even = [];
     numbers.forEach((num) => {
         if((num % 2) === 0){
@@ -85,7 +60,7 @@ function evenNumbers(numbers){//OK
     return `Numeros pares: ${even}`
 }
 
-function cousinNumber(num){//OK
+function cousinNumber(num){
     let cousinCount = 3;
     for(let i=1;i <= num; i++){
         if((num % i) === 0){
@@ -100,7 +75,7 @@ function cousinNumber(num){//OK
     }
 }
 
-function numberTable(num, tableSize){//OK
+function numberTable(num, tableSize){
     let i = 0;
     let result = [];
     while(i <= tableSize){
@@ -110,7 +85,7 @@ function numberTable(num, tableSize){//OK
     return result;
 }
 
-function factorial(num){//OK
+function factorial(num){
     let result = num;
     let i = num;
     while(i > 1){
@@ -120,7 +95,7 @@ function factorial(num){//OK
     return result;
 }
 
-function intersection(listA, listB){//OK
+function intersection(listA, listB){
     let result = [];
     for(let i = 0; i < listA.length; i++){
         for (let j = 0; j < listB.length; j++){
@@ -132,7 +107,7 @@ function intersection(listA, listB){//OK
     return `${result}`;
 }
 
-function concat(listA, listB){//OK
+function concat(listA, listB){
     let result = [];
     const listSize = listA.length >= listB.length ? listA.length : listB.length;
     for(let i = 0; i < listSize; i++){
@@ -146,7 +121,7 @@ function concat(listA, listB){//OK
     return `${result}`;
 }
 
-function matrices(axisX, axisY, values){//OK
+function matrices(axisX, axisY, values){
     let result = [];
     let aux = []
     let cont = 0;
@@ -161,7 +136,7 @@ function matrices(axisX, axisY, values){//OK
     return result;
 }
 
-function palindrome (word){//OK
+function palindrome (word){
     let wordSplit = word.toLowerCase().split("");
     let wordLength = Math.floor(wordSplit.length / 2);
     let backwards = wordSplit.length-1;
